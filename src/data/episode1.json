@@ -1,0 +1,86 @@
+{
+  "title": "Leo & Mimi Learn About Colors",
+  "scenes": [
+    {
+      "id": "intro",
+      "background": "meadow",
+      "duration": 8,
+      "elements": [
+        { "type": "title", "text": "Leo & Mimi's Little World", "duration": 3 },
+        { "type": "title", "text": "Leo & Mimi Learn About Colors", "duration": 3 },
+        { "type": "character", "name": "Leo", "action": "enterLeft", "x": -100, "y": 300 },
+        { "type": "character", "name": "Mimi", "action": "enterRight", "x": 900, "y": 300 },
+        { "type": "dialogue", "character": "Leo", "text": "Wow! Look at all the beautiful things around us!", "duration": 3 },
+        { "type": "dialogue", "character": "Mimi", "text": "Today we're going to learn about colors!", "duration": 3 }
+      ]
+    },
+    {
+      "id": "red",
+      "background": "meadow",
+      "duration": 12,
+      "elements": [
+        { "type": "character", "name": "Leo", "action": "point", "x": 300, "y": 250 },
+        { "type": "character", "name": "Mimi", "action": "look", "x": 400, "y": 250 },
+        { "type": "object", "name": "apple", "x": 300, "y": 200 },
+        { "type": "dialogue", "character": "Leo", "text": "Look, Mimi! What color is this apple?", "duration": 3 },
+        { "type": "dialogue", "character": "Mimi", "text": "It's RED!", "duration": 3 },
+        { "type": "text", "text": "RED", "size": "large", "color": "red", "x": 400, "y": 150, "duration": 3 },
+        { "type": "dialogue", "character": "Mimi", "text": "Can you say RED?", "duration": 3 }
+      ]
+    },
+    {
+      "id": "blue",
+      "background": "meadow",
+      "duration": 12,
+      "elements": [
+        { "type": "character", "name": "Leo", "action": "point", "x": 400, "y": 200 },
+        { "type": "character", "name": "Mimi", "action": "look", "x": 350, "y": 200 },
+        { "type": "object", "name": "butterfly", "x": 400, "y": 150 },
+        { "type": "dialogue", "character": "Leo", "text": "Wow! Look at that butterfly!", "duration": 3 },
+        { "type": "dialogue", "character": "Mimi", "text": "What color is the butterfly?", "duration": 3 },
+        { "type": "dialogue", "character": "Mimi", "text": "BLUE!", "duration": 3 },
+        { "type": "text", "text": "BLUE", "size": "large", "color": "blue", "x": 400, "y": 100, "duration": 3 }
+      ]
+    },
+    {
+      "id": "yellow",
+      "background": "meadow",
+      "duration": 12,
+      "elements": [
+        { "type": "character", "name": "Leo", "action": "point", "x": 250, "y": 180 },
+        { "type": "character", "name": "Mimi", "action": "look", "x": 300, "y": 180 },
+        { "type": "object", "name": "flower", "x": 250, "y": 130 },
+        { "type": "dialogue", "character": "Leo", "text": "I found another one!", "duration": 3 },
+        { "type": "dialogue", "character": "Mimi", "text": "What color is the flower?", "duration": 3 },
+        { "type": "dialogue", "character": "Mimi", "text": "YELLOW!", "duration": 3 },
+        { "type": "text", "text": "YELLOW", "size": "large", "color": "yellow", "x": 250, "y": 80, "duration": 3 }
+      ]
+    },
+    {
+      "id": "memory",
+      "background": "meadow",
+      "duration": 20,
+      "elements": [
+        { "type": "character", "name": "Leo", "action": "idle", "x": 200, "y": 300 },
+        { "type": "character", "name": "Mimi", "action": "idle", "x": 600, "y": 300 },
+        { "type": "object", "name": "apple", "x": 300, "y": 200 },
+        { "type": "object", "name": "butterfly", "x": 400, "y": 200 },
+        { "type": "object", "name": "flower", "x": 500, "y": 200 },
+        { "type": "dialogue", "character": "Leo", "text": "Let's test what we learned!", "duration": 3 },
+        { "type": "dialogue", "character": "Mimi", "text": "Can you find RED?", "duration": 3 }
+      ]
+    },
+    {
+      "id": "ending",
+      "background": "meadow",
+      "duration": 8,
+      "elements": [
+        { "type": "character", "name": "Leo", "action": "celebrate", "x": 250, "y": 300 },
+        { "type": "character", "name": "Mimi", "action": "celebrate", "x": 450, "y": 300 },
+        { "type": "dialogue", "character": "Mimi", "text": "Great job, little explorer!", "duration": 3 },
+        { "type": "dialogue", "character": "Leo", "text": "Thanks for learning with Leo & Mimi!", "duration": 3 },
+        { "type": "dialogue", "character": "Mimi", "text": "See you next time!", "duration": 3 }
+      ]
+    }
+  ]
+}

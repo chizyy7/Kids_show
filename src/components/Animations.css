@@ -1,0 +1,104 @@
+/* Character animations */
+@keyframes blink {
+  0%, 90% { opacity: 1; }
+  91%, 100% { opacity: 0; }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-15deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
+}
+@keyframes lookLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-10px); }
+}
+@keyframes lookRight {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(10px); }
+}
+@keyframes point {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(-20px,-20px) scale(1.1); }
+  100% { transform: translate(0,0); }
+}
+@keyframes ask {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+@keyframes smile {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+@keyframes celebrate {
+  0% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-10px) rotate(5deg); }
+  50% { transform: translateY(0) rotate(0deg); }
+  75% { transform: translateY(-10px) rotate(-5deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+/* Background animations */
+@keyframes cloudMove {
+  0% { transform: translateX(-200px); }
+  100% { transform: translateX(1200px); }
+}
+@keyframes grassSway {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+@keyframes flowerBob {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+/* Character action classes */
+.blink { animation: blink 4s infinite; }
+.bounce { animation: bounce 2s infinite; }
+.wave { animation: wave 2s infinite; }
+.look-left { animation: lookLeft 1.5s infinite alternate; }
+.look-right { animation: lookRight 1.5s infinite alternate; }
+.point { animation: point 1.5s ease-in-out; }
+.ask { animation: ask 1.5s ease-in-out; }
+.smile { animation: smile 1.5s ease-in-out; }
+.celebrate { animation: celebrate 1.5s ease-in-out; }
+
+/* Text fade */
+.fade-in { animation: fadeIn 0.5s ease-in; }
+.fade-out { animation: fadeOut 0.5s ease-out; }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* Meadow elements */
+.cloud {
+  animation: cloudMove 20s linear infinite;
+}
+.cloud:nth-child(2) {
+  animation-delay: 5s;
+  animation-duration: 25s;
+}
+.cloud:nth-child(3) {
+  animation-delay: 12s;
+  animation-duration: 18s;
+}
+.grass {
+  animation: grassSway 3s infinite alternate;
+}
+.flower {
+  animation: flowerBob 4s infinite alternate;
+}

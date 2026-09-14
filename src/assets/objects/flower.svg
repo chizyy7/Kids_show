@@ -1,0 +1,43 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Center -->
+  <circle cx="30" cy="30" r="8" fill="#FFD700"/>
+  <!-- Petals -->
+  <circle cx="30" cy="15" r="12" fill="#FFFF00"/>
+  <circle cx="45" cy="30" r="12" fill="#FFFF00"/>
+Oops need correct syntax. Let's rewrite.
+
+We'll create petals using path or multiple circles.
+
+Let's do simple: six circles around center.
+
+We'll use <g> with transforms.
+
+But easier: use <circle> for each petal with offset.
+
+Let's do:
+
+<circle cx="30" cy="30" r="8" fill="#FFD700"/>
+<circle cx="30" cy="12" r="10" fill="#FFFF00"/>
+<circle cx="46" cy="20" r="10" fill="#FFFF00"/>
+<circle cx="46" cy="40" r="10" fill="#FFFF00"/>
+<circle cx="30" cy="48" r="10" fill="#FFFF00"/>
+<circle cx="14" cy="40" r="10" fill="#FFFF00"/>
+<circle cx="14" cy="20" r="10" fill="#FFFF00"/>
+
+That's 7 petals.
+
+Let's produce<tool_call>
+<function=Bash>
+<parameter=command>
+cat > src/assets/objects/flower.svg << 'EOF'
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Center -->
+  <circle cx="30" cy="30" r="8" fill="#FFD700"/>
+  <!-- Petals -->
+  <circle cx="30" cy="12" r="10" fill="#FFFF00"/>
+  <circle cx="46" cy="20" r="10" fill="#FFFF00"/>
+  <circle cx="46" cy="40" r="10" fill="#FFFF00"/>
+  <circle cx="30" cy="48" r="10" fill="#FFFF00"/>
+  <circle cx="14" cy="40" r="10" fill="#FFFF00"/>
+  <circle cx="14" cy="20" r="10" fill="#FFFF00"/>
+</svg>

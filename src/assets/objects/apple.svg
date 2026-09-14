@@ -1,0 +1,8 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Apple -->
+  <circle cx="30" cy="30" r="25" fill="#FF0000"/>
+  <!-- Leaf -->
+  <path d="M30,10 Q35,0 45,15 Q40,20 35,15 Q30,10" fill="#008000"/>
+  <!-- Sting -->
+  <line x1="30" y1="5" x2="30" y2="0" stroke="#555555" stroke-width="2"/>
+</svg>

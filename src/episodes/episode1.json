@@ -1,0 +1,99 @@
+{
+  "title": "Leo & Mimi Learn About Colors",
+  "scenes": [
+    {
+      "id": "intro",
+      "background": "meadow",
+      "duration": 2,
+      "elements": [
+        { "type": "title", "text": "Leo & Mimi Learn About Colors", "duration": 2 }
+      ]
+    },
+    {
+      "id": "meadow",
+      "background": "meadow",
+      "duration": 3,
+      "elements": [
+        { "type": "character", "name": "Leo", "action": "idle", "x": 100, "y": 300 },
+        { "type": "character", "name": "Mimi", "action": "idle", "x": 500, "y": 300 },
+        { "type": "dialogue", "character": "Leo", "text": "Wow, what a beautiful meadow!", "duration": 3 }
+      ]
+    },
+    {
+      "id": "discover-red",
+      "background": "meadow",
+      "duration": 4,
+      "elements": [
+        { "type": "character", "name": "Leo", "action": "point", "x": 250, "y": 250 },
+        { "type": "character", "name": "Mimi", "action": "look", "x": 400, "y": 250 },
+        { "type": "object", "name": "apple", "x": 300, "y": 200 },
+        { "type": "dialogue", "character": "Leo", "text": "What's that red thing?", "duration": 2 },
+        { "type": "dialogue", "character": "Mimi", "text": "That's an apple, Leo! It's red.", "duration": 2 }
+      ]
+    },
+    {
+      "id": "discover-blue",
+      "background": "meadow",
+      "duration": 4,
+      "elements": [
+        { "type": "character", "name": "Leo", "action": "point", "x": 350, "y": 200 },
+        { "type": "character", "name": "Mimi", "action": "look", "x": 400, "y": 200 },
+        { "type": "object", "name": "butterfly", "x": 400, "y": 150 },
+        { "type": "dialogue", "character": "Leo", "text": "And that blue flutter?", "duration": 2 },
+        { "type": "dialogue", "character": "Mimi", "text": "That's a butterfly! It's blue.", "duration": 2 }
+      ]
+    },
+    {
+      "id": "discover-yellow",
+      "background": "meadow",
+      "duration": 4,
+      "elements": [
+        { "type": "character", "name": "Leo", "action": "point", "x": 200, "y": 180 },
+        { "type": "character", "name": "Mimi", "action": "look", "x": 250, "y": 180 },
+        { "type": "object", "name": "flower", "x": 250, "y": 130 },
+        { "type": "dialogue", "character": "Leo", "text": "What about this sunny one?", "duration": 2 },
+        { "type": "dialogue", "character": "Mimi", "text": "That's a flower! It's yellow.", "duration": 2 }
+      ]
+    },
+    {
+      "id": "game-red",
+      "background": "meadow",
+      "duration": 5,
+      "elements": [
+        { "type": "character", "name": "Leo", "action": "ask", "x": 300, "y": 300 },
+        { "type": "character", "name": "Mimi", "action": "smile", "x": 400, "y": 300 },
+        { "type": "dialogue", "character": "Leo", "text": "Can you find something RED?", "duration": 3 }
+      ]
+    },
+    {
+      "id": "game-blue",
+      "background": "meadow",
+      "duration": 5,
+      "elements": [
+        { "type": "character", "name": "Leo", "action": "ask", "x": 300, "y": 300 },
+        { "type": "character", "name": "Mimi", "action": "smile", "x": 400, "y": 300 },
+        { "type": "dialogue", "character": "Leo", "text": "Can you find something BLUE?", "duration": 3 }
+      ]
+    },
+    {
+      "id": "game-yellow",
+      "background": "meadow",
+      "duration": 5,
+      "elements": [
+        { "type": "character", "name": "Leo", "action": "ask", "x": 300, "y": 300 },
+        { "type": "character", "name": "Mimi", "action": "smile", "x": 400, "y": 300 },
+        { "type": "dialogue", "character": "Leo", "text": "Can you find something YELLOW?", "duration": 3 }
+      ]
+    },
+    {
+      "id": "ending",
+      "background": "meadow",
+      "duration": 4,
+      "elements": [
+        { "type": "character", "name": "Leo", "action": "celebrate", "x": 250, "y": 300 },
+        { "type": "character", "name": "Mimi", "action": "celebrate", "x": 450, "y": 300 },
+        { "type": "dialogue", "character": "Mimi", "text": "Great job, little explorer!", "duration": 3 }
+      ]
+    }
+  ]
+}
